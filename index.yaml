@@ -1,0 +1,117 @@
+apiVersion: v1
+entries:
+  apache:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.4.54
+    created: "2022-10-20T18:34:32.188724248Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache HTTP Server is an open-source HTTP server. The goal of this
+      project is to provide a secure, efficient and extensible server that provides
+      HTTP services in sync with the current HTTP standards.
+    digest: 0203d2fcc52c8cb4ee633bcb52ea69a0229ccb012980ac5920cfed1662fe7b78
+    home: https://github.com/bitnami/charts/tree/master/bitnami/apache
+    icon: https://bitnami.com/assets/stacks/apache/img/apache-stack-220x234.png
+    keywords:
+    - apache
+    - http
+    - https
+    - www
+    - web
+    - reverse proxy
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: apache
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/apache
+    - https://httpd.apache.org
+    urls:
+    - apache-9.2.5.tgz
+    version: 9.2.5
+  firstchart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-10-20T18:34:32.189322767Z"
+    description: A Helm chart for Kubernetes
+    digest: aac02d42bde3e2507ad7baa52080f48d54c0acdb8f07c2908eafdda2905af3bc
+    name: firstchart
+    type: application
+    urls:
+    - firstchart-0.1.0.tgz
+    version: 0.1.0
+  mysql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 8.0.31
+    created: "2022-10-20T18:34:32.193900731Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: 06df0d429ecb75afc5feed41006ee26976f907baf81ac2d5215f89dad23f1920
+    home: https://github.com/bitnami/charts/tree/master/bitnami/mysql
+    icon: https://bitnami.com/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: mysql
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/mysql
+    - https://mysql.com
+    urls:
+    - mysql-9.4.1.tgz
+    version: 9.4.1
+  nginx:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 1.23.1
+    created: "2022-10-20T18:34:32.197728995Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NGINX Open Source is a web server that can be also used as a reverse
+      proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due
+      to its ability to provide faster content.
+    digest: 428f38dd90a290de616ac11c93dbb2cbb2917deb7f121fbc85030c544c87b941
+    home: https://github.com/bitnami/charts/tree/master/bitnami/nginx
+    icon: https://bitnami.com/assets/stacks/nginx/img/nginx-stack-220x234.png
+    keywords:
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: nginx
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/nginx
+    - https://www.nginx.org
+    urls:
+    - nginx-13.2.10.tgz
+    version: 13.2.10
+generated: "2022-10-20T18:34:32.181569279Z"
