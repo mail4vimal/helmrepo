@@ -1,0 +1,12 @@
+jq -n --arg user1 "username1" --arg pass1 "password1" \
+      --arg user2 "username2" --arg pass2 "password2" \
+      '{
+          "auths": {
+              "https://index.docker.io/v1/": {
+                  "auth": ($user1 + ":" + $pass1 | @base64)
+              },
+              "https://my-registry.com": {
+                  "auth": ($user2 + ":" + $pass2 | @base64)
+              }
+          }
+      }' > docker-config.json
